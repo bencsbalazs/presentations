@@ -26,6 +26,11 @@
     font-weight: bold;
 }
 
+#communikationfails {
+    width: 100%;
+    text-align: center;
+}
+
 #communikationfails li.fragment.visible.current-fragment {
     font-size: larger;
     line-height: 3;

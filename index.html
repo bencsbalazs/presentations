@@ -40,13 +40,13 @@
                 </tr>
                 <tr>
                     <td rowspan="2">A másik érdekeit nem veszi figyelembe</td>
-                    <td class="red"><p class="py-3">Versengő</p></td>
-                    <td class="green"><p class="py-3">Együttműködő</p></td>
+                    <td class="red"><p class="py-3 fragment fade">Versengő</p></td>
+                    <td class="green"><p class="py-3 fragment fade">Együttműködő</p></td>
                     <td rowspan="2">A másik érdekeit figyelembe veszi</td>
                 </tr>
                 <tr>
-                    <td class="yellow"><p class="py-3">Befolyásoló</p></td>
-                    <td class="blue"><p class="py-3">Alkalmazkodó</p></td>
+                    <td class="yellow"><p class="py-3 fragment fade">Befolyásoló</p></td>
+                    <td class="blue"><p class="py-3 fragment fade">Alkalmazkodó</p></td>
                 </tr>
                 <tr>
                     <td colspan="4" align="center">Saját érdekeit nem veszi figyelembe</td>
@@ -287,9 +287,7 @@
             <section>
                 A másik meghallgatásának módja:
                 <ol>
-                    <li class="fragment">Legyünk nyitottak, lazák, befogadóak.<br>Tegyük félre saját fenntartásainkat.
-                        Lehet hogy a másik fél máshogy látja a dolgot.
-                    </li>
+                    <li class="fragment">Legyünk nyitottak, lazák, befogadóak.</li>
                     <li class="fragment">Kerüljük a spontán megnyilvánulásokat.</li>
                     <li class="fragment">Hallgassunk aktívan</li>
                     <li class="fragment">Igyekezzünk empatikusnak lenni.</li>
@@ -311,10 +309,14 @@
         <section>
             <h3>Hogyan mondjunk nemet?</h3>
             <ul>
-                <li></li>
+                <li class="fragment">Mielőtt nemet mondunk, értsük meg pontosan, miről van szó.</li>
+                <li class="fragment">Röviden, udvariasan, de határozottan mondjuk ki, hogy nem. Ne hezitáljunk, mert akkor újra próbálkoznak.</li>
+                <li class="fragment">A nem mellé ajánljunk fel alternatívákat a megadásra.</li>
+                <li class="fragment">Ha valaki kitartóan kér, kitartóan utasítsuk vissza. Fogatmazhatunk másképpen, hátha úgy jobban meghallja.</li>
+                <li class="fragment">Jogunkban áll nemet mondani. Ha mindenre igent mondunk, akár a hitelességünk is veszélybe kerülhet.</li>
             </ul>
         </section>
-        <section>
+        <section data-state="communikationfails">
             <ul id="communikationfails">
                 <li class="fragment">Amit mondanom kell</li>
                 <li class="fragment">Amit gondolom hogy elmondok</li>
@@ -332,15 +334,6 @@
     </div>
 </div>
 <script src="js/reveal.js"></script>
-<script>
-    Reveal.initialize({
-        dependencies: [
-            {src: 'plugin/markdown/marked.js'},
-            {src: 'plugin/markdown/markdown.js'},
-            {src: 'plugin/notes/notes.js', async: true},
-            {src: 'plugin/highlight/highlight.js', async: true}
-        ]
-    });
-</script>
+<script src="packages/assertive_communikation/scripts.js"></script>
 </body>
 </html>
