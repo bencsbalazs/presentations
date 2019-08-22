@@ -13,9 +13,7 @@ Reveal.addEventListener("communikationfails", function () {
         fragments[i].style.margin = "0 " + (i + 4) + "%";
     }
 });
-Reveal.addKeyBinding( { keyCode: 84, key: 'T', description: 'Start timer' }, function() {
-	// start timer
-} )
-Reveal.addEventListener( 'slidechanged', function( event ) {
-	location.href = "" + event.indexh + "/" + event.indexv;
-} );
+Reveal.addKeyBinding( { keyCode: 84, key: 'T', description: 'Translation change' }, function() {
+	url = ((window.location.href.indexOf('_en') > -1)?"index.html" : "index_en.html") + "#/"+Reveal.getIndices().h+"/"+Reveal.getIndices().v;
+    location.replace(url);
+});
